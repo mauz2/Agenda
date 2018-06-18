@@ -30,7 +30,6 @@ public class CadActivity extends AppCompatActivity {
         this.btSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Controller c = new Controller(getBaseContext());
                 Controller c = Controller.getInstancia(getBaseContext());
                 String descricao = ctDescricao.getText().toString();
                 String tipo = ctTipo.getText().toString();

@@ -94,7 +94,6 @@ public class Controller {
 
         db = banco.getReadableDatabase();
 
-        // _id3
         where = "_id=" + id;
 
         valores = new ContentValues();

@@ -7,21 +7,21 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btCad"
-        android:layout_width="wrap_content"
+        android:id="@+id/btAdNovo"
+        android:layout_width="149dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="41dp"
-        android:layout_alignParentStart="true"
+        android:layout_marginTop="137dp"
+        android:layout_alignStart="@+id/btMostrarAg"
         android:layout_alignParentTop="true"
-        android:text="Cadastro" />
+        android:text="adicionar novo" />
 
     <Button
-        android:id="@+id/btLista"
+        android:id="@+id/btMostrarAg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="129dp"
-        android:layout_alignStart="@+id/btCad"
-        android:layout_alignParentTop="true"
-        android:text="lista" />
+        android:layout_marginStart="102dp"
+        android:layout_marginBottom="182dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="mostrar agenda" />
 </RelativeLayout>

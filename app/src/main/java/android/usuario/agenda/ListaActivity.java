@@ -25,7 +25,6 @@ public class ListaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista);
 
-        //final Controller c = new Controller(getBaseContext());
         final Controller c = Controller.getInstancia(getBaseContext());
         cursor = c.lista();
 
@@ -44,7 +43,6 @@ public class ListaActivity extends AppCompatActivity {
         this.lista = (ListView) findViewById(R.id.listaDados);
         this.lista.setAdapter(ad);
 
-        //ativando o click
         this.lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
@@ -84,7 +82,6 @@ public class ListaActivity extends AppCompatActivity {
                         });
                         alerta = builder.create();
                         alerta.show();
-
 
                     }
                 });

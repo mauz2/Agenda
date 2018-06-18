@@ -8,15 +8,15 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btCad, btLista;
+    Button btAdNovo, btMostrarAg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.btCad = (Button) findViewById(R.id.btCad);
-        this.btCad.setOnClickListener(new View.OnClickListener() {
+        this.btAdNovo = (Button) findViewById(R.id.btAdNovo);
+        this.btAdNovo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CadActivity.class);
@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        this.btLista = (Button) findViewById(R.id.btLista);
-        this.btLista.setOnClickListener(new View.OnClickListener() {
+        this.btMostrarAg = (Button) findViewById(R.id.btMostrarAg);
+        this.btMostrarAg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListaActivity.class);
