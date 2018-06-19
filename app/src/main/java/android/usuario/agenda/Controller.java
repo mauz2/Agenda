@@ -14,17 +14,17 @@ public class Controller {
         this.banco = new AdmBanco(context);
     }
 
-    private static Controller inicaInstancia;
+    private static Controller iniciaInstancia;
 
     private Controller() {
     }
 
     public static Controller getInstancia(Context context) {
-        if (inicaInstancia == null)
+        if (iniciaInstancia == null)
             banco = new AdmBanco(context);
-        inicaInstancia = new Controller();
+        iniciaInstancia = new Controller();
 
-        return inicaInstancia;
+        return iniciaInstancia;
     }
 
     public String inserir(String descricao, String tipo, String hora, String data) {

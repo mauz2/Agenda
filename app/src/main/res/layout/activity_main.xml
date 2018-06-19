@@ -9,7 +9,7 @@
     <Button
         android:id="@+id/btAdNovo"
         android:layout_width="383dp"
-        android:layout_height="273dp"
+        android:layout_height="58dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:text="adicionar novo" />
@@ -17,7 +17,7 @@
     <Button
         android:id="@+id/btMostrarAg"
         android:layout_width="379dp"
-        android:layout_height="239dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="mostrar agenda" />
